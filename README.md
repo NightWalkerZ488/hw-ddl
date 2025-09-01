@@ -34,7 +34,7 @@ sudo mysql -u root -p;
 CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY 'password';
 SELECT User, Host FROM mysql.user;
 ```
-!(users)[https://github.com/NightWalkerZ488/hw-ddl/blob/main/users1.PNG]
+![users](https://github.com/NightWalkerZ488/hw-ddl/blob/main/users1.PNG)
 ---
 
 ### Задание 2
