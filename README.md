@@ -96,7 +96,5 @@ store                    | store_id
 
 ![exel](https://github.com/NightWalkerZ488/hw-ddl/blob/main/exel.PNG)
 
-
-
-### Ответ:
+____________________________________________________________________________________
 
