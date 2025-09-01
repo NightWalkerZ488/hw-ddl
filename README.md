@@ -22,6 +22,19 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 
 ### Ответ:
 
+Устанавливаем и включаем MySQL сервер на локальной виртуальной машине:
+```
+sudo apt install mysql-server -y;
+sudo systemctl start mysql;
+sudo systemctl enable mysql.
+```
+Подключаемся к MySQL, создаём учётную запись sys_temp и запрашиваем список пользователей:
+```
+sudo mysql -u root -p;
+CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY 'password';
+SELECT User, Host FROM mysql.user;
+```
+!(users)[https://github.com/NightWalkerZ488/hw-ddl/blob/main/users1.PNG]
 ---
 
 ### Задание 2
