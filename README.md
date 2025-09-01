@@ -60,7 +60,7 @@ SHOW TABLES.
 ```
 Список таблиц:
 
-[tables](https://github.com/NightWalkerZ488/hw-ddl/blob/main/sakila_tables.PNG)
+![tables](https://github.com/NightWalkerZ488/hw-ddl/blob/main/sakila_tables.PNG)
 
 
 ### Задание 2
