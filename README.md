@@ -62,6 +62,9 @@ SHOW TABLES.
 
 ![tables](https://github.com/NightWalkerZ488/hw-ddl/blob/main/sakila_tables.PNG)
 
+ER-диаграмма в DBeaver:
+
+![dia](https://github.com/NightWalkerZ488/hw-ddl/blob/main/sakila_beaver.PNG)
 
 ### Задание 2
 
