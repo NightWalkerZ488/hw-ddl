@@ -35,7 +35,33 @@ CREATE USER 'sys_temp'@'localhost' IDENTIFIED BY 'password';
 SELECT User, Host FROM mysql.user;
 ```
 ![users](https://github.com/NightWalkerZ488/hw-ddl/blob/main/users1.PNG)
----
+
+Даём все права sys_temp и запрашиваем список прав:
+```
+GRANT ALL PRIVILEGES ON *.* TO 'sys_temp'@'localhost' WITH GRANT OPTION;
+SHOW GRANTS FOR 'sys_temp'@'localhost';
+```
+![privilegs](https://github.com/NightWalkerZ488/hw-ddl/blob/main/privilegs.PNG)
+
+Подключаемся к базе от имени sys_tmp:
+
+```
+exit;
+mysql -u sys_temp -p.
+```
+Восстанавливаем скачанный дамп базы данных и смотри список таблиц:
+
+```
+CREATE DATABASE sakila CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+mysql -u sys_temp -p sakila < sakila-schema.sql;
+mysql -u sys_temp -p sakila < sakila-schema.sql;
+mysql -u sys_temp -p sakila;
+SHOW TABLES.
+```
+Список таблиц:
+
+[tables](https://github.com/NightWalkerZ488/hw-ddl/blob/main/sakila_tables.PNG)
+
 
 ### Задание 2
 
